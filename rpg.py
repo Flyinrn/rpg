@@ -1,4 +1,4 @@
-import random
+import random dhdhdhdhdhdh
 import time
 
 # ========================
@@ -145,4 +145,5 @@ while player.is_alive():
 
 if not player.is_alive():
     slow_print("💀 Dein Abenteuer endet hier...")
+
 
