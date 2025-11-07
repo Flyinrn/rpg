@@ -1,9 +1,19 @@
-import random dhdhdhdhdhdh
+import random 
 import time
+import threading
+import tkinter as tk
+from tkinter import scrolledtext
 
 # ========================
-#   RPG Textbasiertes Spiel
+#   RPG Textbasiertes Spiel (mit GUI)
 # ========================
+
+# --- GUI-Helferklasse ---
+class GameGUI:
+    def __init__(self, title="Python RPG"):
+        self.root = tk.Tk()
+        self.root.title(title)
+        self.root.geometry("700x480")
 
 # --- Klassen für das Spiel ---
 class Player:
@@ -145,5 +155,6 @@ while player.is_alive():
 
 if not player.is_alive():
     slow_print("💀 Dein Abenteuer endet hier...")
+
 
 
